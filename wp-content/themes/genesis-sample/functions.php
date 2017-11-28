@@ -64,15 +64,15 @@ add_theme_support( 'custom-background' );
 //* Add support for after entry widget
 add_theme_support( 'genesis-after-entry-widget-area' );
 
-//* Add support for custom header
-add_theme_support( 'custom-header', array(
-	'width'           => 900,
-	'height'          => 400,
-	'flex-width'      => false,
-	'flex-height'     => false,
-	'header-selector' => '.site-title a',
-	'header-text'     => false,
-) );
+// //* Add support for custom header
+// add_theme_support( 'custom-header', array(
+// 	'width'           => 900,
+// 	'height'          => 400,
+// 	'flex-width'      => false,
+// 	'flex-height'     => false,
+// 	'header-selector' => '.site-title a',
+// 	'header-text'     => false,
+// ) );
 
 //* Remove the site description
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
@@ -317,10 +317,11 @@ add_action( 'genesis_before_entry', 'genesis_do_post_image', 9 );
 //* Customize the credits
 add_filter('genesis_footer_creds_text', 'custom_footer_creds_text');
 function custom_footer_creds_text() {
+
     echo '<div class="creds"><p>';
-    echo 'Copyright &copy; ';
-    echo date('Y');
-    echo ' &middot; <a target="_blank" href="http://restored316designs.com/themes">glam theme</a> by <a target="_blank" href="http://www.restored316designs.com">Restored 316</a>';
+    // echo 'Copyright &copy; ';
+    // echo date('Y');
+    // echo ' &middot; <a target="_blank" href="http://www.vagaro.com">Vagaro</a>';
     echo '</p></div>';
 
 }
