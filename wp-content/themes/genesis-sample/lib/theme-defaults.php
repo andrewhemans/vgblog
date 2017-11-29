@@ -34,7 +34,7 @@ function glam_theme_setting_defaults() {
 	if( function_exists( 'genesis_update_settings' ) ) {
 
 		genesis_update_settings( array(
-			'blog_cat_num'              => 5,	
+			'blog_cat_num'              => 5,
 			'content_archive'           => 'full',
 			'content_archive_limit'     => 300,
 			'content_archive_thumbnail' => 1,
@@ -43,8 +43,8 @@ function glam_theme_setting_defaults() {
 			'posts_nav'                 => 'numeric',
 			'site_layout'               => 'content-sidebar',
 		) );
-	
-	} 
+
+	}
 
 	update_option( 'posts_per_page', 5 );
 
@@ -67,11 +67,11 @@ function glam_social_default_styles( $defaults ) {
 		'size'                   => 20,
 		'new_window'             => 1,
 		);
-		
+
 	$args = wp_parse_args( $args, $defaults );
-	
+
 	return $args;
-	
+
 }
 
 //* Set Genesis Responsive Slider defaults
@@ -88,11 +88,11 @@ function glam_responsive_slider_defaults( $defaults ) {
 		'slideshow_height'                => '400',
 		'slideshow_more_text'             => __( 'Read More', 'glam' ),
 		'slideshow_title_show'            => 1,
-		'slideshow_width'                 => '700',
+		'slideshow_width'                 => '1080',
 	);
 
 	$args = wp_parse_args( $args, $defaults );
-	
+
 	return $args;
 }
 
@@ -100,8 +100,8 @@ function glam_responsive_slider_defaults( $defaults ) {
 add_action( 'after_switch_theme', 'glam_theme_reading_defaults' );
 function glam_theme_reading_defaults() {
 	if ( 'posts' != get_option( 'show_on_front' ) ) {
-	
+
 		update_option( 'show_on_front', 'posts' );
-	
+
 	}
 }
