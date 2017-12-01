@@ -572,6 +572,25 @@ a.more-link:after {
 	max-width: 100%;
 }
 
+/*Posts*/
+.post-template-default .content {
+	max-width: 800px;
+}
+
+.post-template-default .entry {
+	border: 0;
+	padding: 0;
+	font-size: 17px;
+}
+
+.post-template-default .entry-title {
+	font-size: 36px;
+}
+
+.post-template-default .entry-content {
+	font-size: 1.7rem;
+}
+
 /* ## Column Widths and Positions
 --------------------------------------------- */
 
@@ -792,7 +811,7 @@ height: 50px;
 .entry-title {
 	font-size: 24px;
 	/*font-size: 3.6rem;*/
-	font-weight: 300;
+	font-weight: 700;
 	padding-top: 90px;
 }
 
@@ -1106,9 +1125,9 @@ img.alignright,
 
 .genesis-nav-menu {
 	clear: both;
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 15px;
 	line-height: 1;
+	font-weight: normal;
 	width: 100%;
 }
 
@@ -1430,7 +1449,7 @@ img.alignright,
 
 .recent-post-slider .wp-post-date::after {
 	background: #EB6663!important;
-	bottom: -40px!important;
+	bottom: -60px!important;
 	content: "Read Post"!important;
 	height: 36px!important;
 	text-align: center;
@@ -1452,8 +1471,9 @@ img.alignright,
 
 .entry {
 	margin-bottom: 40px;
-	padding: 0px;
+	padding: 0 30px 0 0;
 	border: 1px solid rgba(0,0,0,.2);
+
 }
 
 .entry-content {
@@ -1495,6 +1515,7 @@ p.entry-meta {
 	font-size: 14px;
 	/*font-size: 1.6rem;*/
 	font-weight: 400;
+	color: #9a9a9a;
 	margin-bottom: 0;
 }
 
