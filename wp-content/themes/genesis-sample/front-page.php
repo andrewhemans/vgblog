@@ -71,7 +71,7 @@ function glam_show_excerpts() {
 //* Modify the length of post excerpts
 add_filter( 'excerpt_length', 'glam_excerpt_length' );
 function glam_excerpt_length( $length ) {
-	return 60; // pull first 50 words
+	return 30; // pull first 50 words
 }
 
 //* Modify the Excerpt read more link
@@ -99,13 +99,13 @@ function glam_show_featured_image() {
 		$image_args = array(
 			'size' => 'large-featured',
 			'attr' => array(
-				'class' => 'aligncenter',
+				'class' => 'alignleft',
 			),
 		);
 
 	} else {
 		$image_args = array(
-			'size' => 'blog-square-featured',
+			'size' => 'large-featured',
 			'attr' => array(
 				'class' => 'alignleft',
 			),

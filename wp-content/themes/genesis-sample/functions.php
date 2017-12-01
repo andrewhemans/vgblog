@@ -56,7 +56,7 @@ function glam_google_fonts() {
 add_image_size( 'blog-square-featured', 260, 260, TRUE );
 add_image_size( 'blog-vertical-featured', 800, 1200, TRUE );
 add_image_size( 'sidebar-featured', 125, 125, TRUE );
-add_image_size( 'large-featured', 850, 475, TRUE );
+add_image_size( 'large-featured', 760, 428, TRUE );
 
 //* Add support for custom background
 add_theme_support( 'custom-background' );
@@ -162,7 +162,7 @@ function glam_cta_widget() {
 add_filter( 'genesis_post_info', 'glam_post_info_filter' );
 function glam_post_info_filter( $post_info ) {
 
-	$post_info = '[post_categories before="in "] on [post_date format="M d, Y"]';
+	$post_info = '[post_author] / [post_date format="M d, Y"]';
     return $post_info;
 
 }
@@ -287,7 +287,7 @@ global $loop_counter;
 
 $loop_counter++;
 
-if( $loop_counter == 4 ) {
+if( $loop_counter == 3 ) {
 
 
 if ( is_active_sidebar( 'between-posts-area' ) ) {
