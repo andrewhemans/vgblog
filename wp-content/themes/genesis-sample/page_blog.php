@@ -66,7 +66,7 @@ function glam_show_featured_image() {
 				'class' => 'aligncenter',
 			),
 		);
-	
+
 	} else {
 		$image_args = array(
 			'size' => 'blog-square-featured',

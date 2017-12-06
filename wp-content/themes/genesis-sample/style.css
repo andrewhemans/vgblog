@@ -1,5 +1,5 @@
 /* # Genesis Sample Child Theme
-Theme Name: Genesis Sample Theme
+Theme Name: Vagaro Blog Theme
 Theme URI: http://my.studiopress.com/themes/genesis/
 Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
@@ -402,16 +402,17 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: #333;
+	background-color: #EB6663;
 	border: 0;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
-	padding: 16px 24px;
-	text-transform: uppercase;
+	padding: 10px 24px;
 	width: auto;
+	text-align: center;
+	border-radius: 3px;
 }
 
 button:hover,
@@ -424,7 +425,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: #EB6663;
+	background-color: #C74E4B;
 	color: #fff;
 }
 
@@ -1686,7 +1687,8 @@ li.comment {
 
 .category-text {
 padding: 10px;
-
+width: 100%;
+text-align: -webkit-center;
 }
 
 .cta-widget {
