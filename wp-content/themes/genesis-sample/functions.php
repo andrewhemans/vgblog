@@ -177,7 +177,26 @@ function glam_post_meta_filter( $post_meta ) {
 }
 
 //* Load Entry Navigation
-add_action( 'genesis_after_entry', 'genesis_prev_next_post_nav', 7 );
+// add_action( 'genesis_after_entry', 'genesis_prev_next_post_nav', 7 );
+
+add_action( 'genesis_entry_footer', 'wpb_prev_next_post_nav_cpt' );
+function wpb_prev_next_post_nav_cpt() {
+	if ( ! is_singular( array( 'portfolio', 'post' ) ) ) //add your CPT name to the array
+		return;
+	genesis_markup( array(
+		'html5'   => '<div %s>',
+		'xhtml'   => '<div class="navigation">',
+		'context' => 'adjacent-entry-pagination',
+	) );
+	echo '<div class="pagination-previous alignleft">';
+	previous_post_link('&larr; %link', 'Previous Post'); // Change nav text here
+	echo '</div>';
+	echo '<div class="pagination-next alignright">';
+	next_post_link(' %link &rarr;', 'Next Post'); // Change nav text here
+	echo '</div>';
+	echo '</div>';
+}
+
 
 //* Add support for footer menu
 add_theme_support ( 'genesis-menus' , array (
@@ -310,8 +329,15 @@ function glam_remove_comment_form_allowed_tags( $defaults ) {
 }
 
 //* Reposition Featured Images
-remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
-add_action( 'genesis_before_entry', 'genesis_do_post_image', 9 );
+// remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+// add_action( 'genesis_before_entry', 'genesis_do_post_image', 9 );
+
+/* Code to Display Featured Image on top of the post */
+add_action( 'genesis_before_entry', 'featured_post_image', 8 );
+function featured_post_image() {
+  if ( ! is_singular( 'post' ) )  return;
+	the_post_thumbnail('post-image');
+}
 
 
 //* Customize the credits
@@ -325,6 +351,16 @@ function custom_footer_creds_text() {
     echo '</p></div>';
 
 }
+
+add_action( 'genesis_after_content_sidebar_wrap', 'sk_footer_widget_areas' );
+function sk_footer_widget_areas() {
+
+	if ( is_single() ) {
+		remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+	}
+
+}
+
 
 //
 // //* Remove the header right widget area
