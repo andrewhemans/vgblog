@@ -252,13 +252,14 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 42px;
 	font-size: 3.6rem;
 }
 
 h2 {
 	font-size: 30px;
-	font-size: 3rem;
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 h3 {
@@ -592,6 +593,10 @@ a.more-link:after {
 	font-size: 1.7rem;
 }
 
+.size-full {
+	max-width: 600px;
+}
+
 /* ## Column Widths and Positions
 --------------------------------------------- */
 
@@ -813,7 +818,7 @@ height: 50px;
 	font-size: 24px;
 	/*font-size: 3.6rem;*/
 	font-weight: 700;
-	padding-top: 90px;
+	padding-top: 50px;
 }
 
 .entry-title a,
@@ -875,9 +880,13 @@ img.centered,
 	width: 100%;
 }
 
-img.alignnone,
-.alignnone {
-	margin-bottom: 12px;
+img.alignnone, .alignnone {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+		margin: 0 auto;
 }
 
 a.alignleft,
@@ -897,6 +906,8 @@ img.alignright,
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: center;
+	margin-top: 12px;
+
 }
 
 .entry-content p.wp-caption-text {
@@ -1676,8 +1687,31 @@ li.comment {
 
 .category-container {
 	background-color: #f5f5f5;
+	height: 250px;
+	display: flex;
+  align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#hair.category-container {
+	background-image: url(../genesis-sample/images/averie-woodard-319832.jpg);
 
 }
+
+#beauty.category-container {
+	background-image: url(../genesis-sample/images/william-randles-288333.jpg);
+}
+
+#skincare.category-container {
+	background-image: url(../genesis-sample/images/caique-silva-408841.jpg);
+}
+
+#healthy-living.category-container {
+	background-image: url(../genesis-sample/images/christopher-campbell-40367.jpg);
+}
+
 
 .category-link {
 	flex-grow: 1;
@@ -1689,6 +1723,13 @@ li.comment {
 padding: 10px;
 width: 100%;
 text-align: -webkit-center;
+}
+
+.category-text p {
+	margin: 0;
+	color: #ffffff;
+	font-size: 32px;
+	font-weight: 400;
 }
 
 .cta-widget {
@@ -1770,6 +1811,7 @@ text-align: -webkit-center;
 
 .footer-widgets-1 {
 	margin-right: 60px;
+	margin-top: 60px;
 }
 
 .footer-widgets-1,
