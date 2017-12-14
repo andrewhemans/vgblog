@@ -53,7 +53,7 @@ function glam_google_fonts() {
 }
 
 //* Add new image sizes
-add_image_size( 'blog-square-featured', 260, 260, TRUE );
+add_image_size( 'blog-square-featured', 300, 300, TRUE );
 add_image_size( 'blog-vertical-featured', 800, 1200, TRUE );
 add_image_size( 'sidebar-featured', 125, 125, TRUE );
 add_image_size( 'large-featured', 760, 428, TRUE );
