@@ -639,6 +639,7 @@ a.more-link:after {
 .full-width-content .content {
 	width: 1080px;
 	margin: 0 auto;
+	padding-top: 50px;
 }
 
 /* ### Primary Sidebar */
@@ -838,7 +839,7 @@ height: 50px;
 }
 
 .footer-widgets .widget-title {
-	color: #fff;
+	color: #333;
 }
 
 .home-featured-image {
@@ -1712,11 +1713,11 @@ li.comment {
 }
 
 #beauty.category-container {
-	background-image: url(../genesis-sample/images/caique-silva-408841.jpg);
+	background-image: url(../genesis-sample/images/william-randles-288333.jpg);
 }
 
-#skincare.category-container {
-	background-image: url(../genesis-sample/images/william-randles-288333.jpg);
+#mens.category-container {
+	background-image: url(../genesis-sample/images/jascha-huisman.jpg);
 }
 
 #healthy-living.category-container {
@@ -1761,9 +1762,10 @@ text-align: -webkit-center;
 }
 
 h4.widget-title.widgettitle {
-	font-size: 14px;
-	font-weight: 300;
+	font-size: 18px;
+	font-weight: 500;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .success > p {

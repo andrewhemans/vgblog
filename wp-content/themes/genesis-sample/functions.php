@@ -357,20 +357,7 @@ function sk_footer_widget_areas() {
 
 	if ( is_single() ) {
 		remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+    remove_action( 'genesis_after', 'genesis_footer_widget_areas' );
 	}
 
 }
-
-
-//
-// //* Remove the header right widget area
-// unregister_sidebar( 'header-right' );
-//
-// //* Add HTML5 markup structure
-// add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
-//
-// //* Add Accessibility support
-// add_theme_support( 'genesis-accessibility', array( 'headings', 'drop-down-menu',  'search-form', 'skip-links', 'rems' ) );
-//
-// //* Add viewport meta tag for mobile browsers
-// add_theme_support( 'genesis-responsive-viewport' );
