@@ -1,9 +1,9 @@
 /* # Genesis Sample Child Theme
 Theme Name: Vagaro Blog Theme
 Theme URI: http://my.studiopress.com/themes/genesis/
-Description: This is the sample theme created for the Genesis Framework.
-Author: StudioPress
-Author URI: http://www.studiopress.com/
+Description: This is a theme created for the Vagaro Blog.
+Author: Andrew Hemans
+Author URI: http://www.vagaro.com/
 Template: genesis
 Template Version: 2.2.2
 Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -176,13 +176,16 @@ textarea:focus,
 a {
 	color: #EB6663;
 	text-decoration: none;
+	border: none;
 }
 
 a:hover,
 a:focus {
 	color: #333;
 	text-decoration: none;
+	border: none;
 }
+
 
 p {
 	margin: 0 0 28px;
@@ -595,6 +598,16 @@ a.more-link:after {
 
 .size-full {
 	max-width: 600px;
+}
+
+span.fa-stack {
+ color: #666666;
+}
+
+ul.wpfai-list {
+    list-style-type: none;
+    margin: 0 0 18px 0!important;
+    padding: 0;
 }
 
 /* ## Column Widths and Positions
@@ -1074,7 +1087,7 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 17px 14px 9px 14px;
+	padding: 8px 14px 5px 14px;
 	width: 10%;
 	border-right: 1px solid rgba(0,0,0,.2);
 }
@@ -1101,7 +1114,7 @@ img.alignright,
 	background-size: contain;
 	background-position: center;
 	float: left;
-	height: 24px;
+	height: 36px;
 	width: 100%;
 }
 
@@ -1249,8 +1262,9 @@ img.alignright,
 	display: inline-block;
 	font-family: 'Font Awesome 5 Light';
 	margin: 0 auto;
-	padding: 10px;
+	padding: 10px 20px;
 	color: #333;
+	float: right;
 }
 
 .nav-primary .responsive-menu-icon::before {
@@ -1539,6 +1553,7 @@ p.entry-meta {
 	margin-bottom: 24px;
 }
 
+
 .entry-footer .entry-meta {
 	border-top: 2px solid #f5f5f5;
 	padding-top: 24px;
@@ -1568,6 +1583,10 @@ p.entry-meta {
 
 .one-third > .entry-header > .entry-title {
 	padding: 16px;
+}
+
+.glam-featured-image > a > img {
+    width: 100%;
 }
 
 /* ## Pagination
@@ -2007,6 +2026,8 @@ p#subscribe-submit {
   width: 234px;
 }
 
+
+
 .apple-app-store-link {
     width: 138px;
     height: 44px;
@@ -2068,7 +2089,7 @@ p#subscribe-submit {
 	}
 
 	.site-header .widget-area {
-		width: 90%;
+		width: 80%;
 	}
 
 	.sidebar-content-sidebar .content,
@@ -2090,7 +2111,7 @@ p#subscribe-submit {
 	}
 
 	.title-area {
-		width: 10%;
+		width: 15%;
 	}
 
 	.footer-widgets-1 {
@@ -2277,6 +2298,12 @@ h2.entry-title {
 
 	.footer-widgets-1 {
 		margin-right: 0;
+	}
+
+	.pagination {
+
+		margin: 20px 20px;
+
 	}
 
 }
