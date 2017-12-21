@@ -45,7 +45,7 @@
   *display: inline;
 
   padding: inherit !important;
-  margin: 0 !important;
+  margin: 10px;
   text-decoration: none;
 
   -webkit-box-sizing: border-box;

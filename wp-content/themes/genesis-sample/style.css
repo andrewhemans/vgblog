@@ -1589,6 +1589,15 @@ p.entry-meta {
     width: 100%;
 }
 
+.entry-meta > a {
+    color: #9a9a9a;
+}
+
+.entry-meta > a:hover {
+    color: #666666;
+}
+
+
 /* ## Pagination
 --------------------------------------------- */
 
@@ -2444,6 +2453,26 @@ h2.entry-title {
 			position: relative;
 			width: 100%;
 		}
+
+#sb_instagram #sbi_images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sbi_item {
+	flex-grow: 1;
+	width: 33%!important;
+	height: 33vw;
+	margin-bottom: 10px!important;
+}
+
+
+
+#sb_instagram .sbi_photo {
+    height: 33vw!important;
+
+}
+
 
 
 }

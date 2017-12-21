@@ -162,7 +162,7 @@ function glam_cta_widget() {
 add_filter( 'genesis_post_info', 'glam_post_info_filter' );
 function glam_post_info_filter( $post_info ) {
 
-	$post_info = '[post_author] / [post_date format="M d, Y"]';
+	$post_info = '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '">[post_author]</a> / [post_date format="M d, Y"]';
     return $post_info;
 
 }
